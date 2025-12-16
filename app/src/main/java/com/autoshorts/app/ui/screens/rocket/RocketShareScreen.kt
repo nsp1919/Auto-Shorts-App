@@ -502,8 +502,7 @@ private fun PlatformButton(
     modifier: Modifier = Modifier
 ) {
     Card(
-        onClick = onClick,
-        modifier = modifier,
+        modifier = modifier.clickable(onClick = onClick),
         colors = CardDefaults.cardColors(containerColor = SurfaceDarkElevated),
         shape = RoundedCornerShape(12.dp)
     ) {

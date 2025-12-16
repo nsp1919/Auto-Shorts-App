@@ -2,8 +2,8 @@ package com.autoshorts.app.ui.components
 
 import android.view.ViewGroup
 import android.widget.FrameLayout
-import androidx.annotation.OptIn
 import androidx.compose.foundation.background
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
@@ -27,7 +27,6 @@ import androidx.media3.ui.AspectRatioFrameLayout
 import androidx.media3.ui.PlayerView
 import coil.compose.AsyncImage
 import com.autoshorts.app.ui.theme.*
-import com.autoshorts.app.util.formatMillisToTime
 
 /**
  * Video card component for displaying video thumbnails in a 9:16 aspect ratio.
@@ -42,10 +41,10 @@ fun VideoCard(
     modifier: Modifier = Modifier
 ) {
     Card(
-        onClick = onClick,
         modifier = modifier
             .aspectRatio(9f / 16f)
-            .clip(RoundedCornerShape(16.dp)),
+            .clip(RoundedCornerShape(16.dp))
+            .clickable(onClick = onClick),
         colors = CardDefaults.cardColors(containerColor = SurfaceDarkElevated)
     ) {
         Box(
@@ -119,7 +118,7 @@ fun VideoCard(
  * Video player component using ExoPlayer.
  * Displays video in 9:16 aspect ratio with play/pause controls.
  */
-@OptIn(UnstableApi::class)
+@androidx.annotation.OptIn(UnstableApi::class)
 @Composable
 fun VideoPlayer(
     videoUrl: String,
@@ -213,8 +212,9 @@ fun VideoPlayer(
         Spacer(modifier = Modifier.height(8.dp))
 
         // Progress bar
+        val progressValue = if (duration > 0) (currentPosition.toFloat() / duration) else 0f
         LinearProgressIndicator(
-            progress = { if (duration > 0) (currentPosition.toFloat() / duration) else 0f },
+            progress = progressValue,
             modifier = Modifier
                 .fillMaxWidth()
                 .height(4.dp)
@@ -229,15 +229,25 @@ fun VideoPlayer(
             horizontalArrangement = Arrangement.SpaceBetween
         ) {
             Text(
-                text = currentPosition.formatMillisToTime(),
+                text = formatTime(currentPosition),
                 style = MaterialTheme.typography.labelSmall,
                 color = TextSecondary
             )
             Text(
-                text = duration.formatMillisToTime(),
+                text = formatTime(duration),
                 style = MaterialTheme.typography.labelSmall,
                 color = TextSecondary
             )
         }
     }
+}
+
+/**
+ * Format milliseconds to MM:SS format.
+ */
+private fun formatTime(millis: Long): String {
+    val totalSeconds = millis / 1000
+    val minutes = totalSeconds / 60
+    val seconds = totalSeconds % 60
+    return String.format("%d:%02d", minutes, seconds)
 }

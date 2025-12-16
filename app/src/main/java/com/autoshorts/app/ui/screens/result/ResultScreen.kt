@@ -358,10 +358,10 @@ private fun ClipThumbnail(
     onClick: () -> Unit
 ) {
     Card(
-        onClick = onClick,
         modifier = Modifier
             .width(80.dp)
-            .aspectRatio(9f / 16f),
+            .aspectRatio(9f / 16f)
+            .clickable(onClick = onClick),
         shape = RoundedCornerShape(12.dp),
         border = if (isSelected) {
             CardDefaults.outlinedCardBorder().copy(
