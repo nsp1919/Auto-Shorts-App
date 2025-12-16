@@ -16,6 +16,7 @@ import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.*
 import androidx.compose.material3.*
+import androidx.compose.material3.HorizontalDivider
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -300,7 +301,7 @@ private fun VideoSourceCard(
             modifier = Modifier.fillMaxWidth(),
             verticalAlignment = Alignment.CenterVertically
         ) {
-            HorizontalDivider(
+            Divider(
                 modifier = Modifier.weight(1f),
                 color = BorderDark
             )
@@ -309,7 +310,7 @@ private fun VideoSourceCard(
                 style = MaterialTheme.typography.labelMedium,
                 color = TextTertiary
             )
-            HorizontalDivider(
+            Divider(
                 modifier = Modifier.weight(1f),
                 color = BorderDark
             )

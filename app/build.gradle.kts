@@ -101,6 +101,7 @@ dependencies {
     // Accompanist for additional Compose utilities
     implementation("com.google.accompanist:accompanist-systemuicontroller:0.32.0")
     implementation("com.google.accompanist:accompanist-permissions:0.32.0")
+    implementation("androidx.compose.material3:material3-android:1.4.0")
 
     // Testing
     testImplementation("junit:junit:4.13.2")
