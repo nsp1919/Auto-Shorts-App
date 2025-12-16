@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <!-- External files directory for shared videos -->
+    <external-files-path
+        name="external_files"
+        path="." />
+    
+    <!-- Cache directory for temp files -->
+    <cache-path
+        name="cache"
+        path="." />
+    
+    <!-- External cache -->
+    <external-cache-path
+        name="external_cache"
+        path="." />
+</paths>

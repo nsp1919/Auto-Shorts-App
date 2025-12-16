@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Auto Shorts</string>
+    
+    <!-- General -->
+    <string name="loading">Loading...</string>
+    <string name="error">Error</string>
+    <string name="retry">Retry</string>
+    <string name="cancel">Cancel</string>
+    <string name="done">Done</string>
+    <string name="close">Close</string>
+    <string name="save">Save</string>
+    <string name="share">Share</string>
+    <string name="download">Download</string>
+    <string name="copy">Copy</string>
+    <string name="edit">Edit</string>
+    
+    <!-- Splash Screen -->
+    <string name="splash_tagline">Transform long videos into viral shorts</string>
+    <string name="splash_powered_by">Powered by AI ✨</string>
+    
+    <!-- Upload Screen -->
+    <string name="upload_title">Create Shorts</string>
+    <string name="upload_subtitle">Upload a video or paste a YouTube link</string>
+    <string name="upload_tap_to_select">Tap to select video</string>
+    <string name="upload_supported_formats">MP4, MOV, AVI supported</string>
+    <string name="upload_or">OR</string>
+    <string name="upload_youtube_hint">Paste YouTube URL</string>
+    <string name="upload_invalid_url">Please enter a valid YouTube URL</string>
+    <string name="upload_duration">Duration</string>
+    <string name="upload_quantity">Number of Clips</string>
+    <string name="upload_language">Language</string>
+    <string name="upload_start">Generate Shorts ✨</string>
+    <string name="uploading">Uploading...</string>
+    <string name="starting">Starting...</string>
+    
+    <!-- Processing Screen -->
+    <string name="processing_title">Processing</string>
+    <string name="processing_wait">Please don\'t close the app while processing</string>
+    <string name="processing_analyzing">Analyzing Video</string>
+    <string name="processing_extracting">Extracting Highlights</string>
+    <string name="processing_generating">Generating Captions</string>
+    <string name="processing_creating">Creating Shorts</string>
+    <string name="processing_finalizing">Finalizing</string>
+    
+    <!-- Result Screen -->
+    <string name="result_title">Your Shorts</string>
+    <string name="result_customize">Customize Captions</string>
+    <string name="result_style">Caption Style</string>
+    <string name="result_color">Caption Color</string>
+    <string name="result_font_size">Font Size</string>
+    <string name="result_regenerate">Regenerate with Style</string>
+    <string name="result_regenerating">Regenerating...</string>
+    <string name="result_rocket_share">Rocket Share 🚀</string>
+    
+    <!-- Rocket Share Screen -->
+    <string name="rocket_title">Rocket Share</string>
+    <string name="rocket_ai_crafting">AI is crafting your content...</string>
+    <string name="rocket_title_label">Title</string>
+    <string name="rocket_description_label">Description</string>
+    <string name="rocket_hashtags_label">Hashtags</string>
+    <string name="rocket_add_hashtag">Add hashtag</string>
+    <string name="rocket_best_time">Best time to post</string>
+    <string name="rocket_copy_all">Copy All</string>
+    <string name="rocket_share_now">Share Now</string>
+    <string name="rocket_share_to">Share directly to</string>
+    
+    <!-- Caption Styles -->
+    <string name="style_modern">Modern</string>
+    <string name="style_classic">Classic</string>
+    <string name="style_bold">Bold</string>
+    <string name="style_minimal">Minimal</string>
+    <string name="style_neon">Neon</string>
+    <string name="style_gradient">Gradient</string>
+    
+    <!-- Languages -->
+    <string name="lang_english">English</string>
+    <string name="lang_hindi">Hindi</string>
+    <string name="lang_telugu">Telugu</string>
+    <string name="lang_tamil">Tamil</string>
+    <string name="lang_spanish">Spanish</string>
+    <string name="lang_portuguese">Portuguese</string>
+    <string name="lang_french">French</string>
+    <string name="lang_german">German</string>
+    <string name="lang_japanese">Japanese</string>
+    <string name="lang_korean">Korean</string>
+    
+    <!-- Platforms -->
+    <string name="platform_instagram">Instagram</string>
+    <string name="platform_youtube">YouTube</string>
+    <string name="platform_tiktok">TikTok</string>
+    
+    <!-- Error Messages -->
+    <string name="error_upload_failed">Upload failed. Please try again.</string>
+    <string name="error_process_failed">Processing failed. Please try again.</string>
+    <string name="error_network">Network error. Please check your connection.</string>
+    <string name="error_invalid_video">Invalid video file.</string>
+    <string name="error_something_wrong">Something went wrong</string>
+    
+    <!-- Success Messages -->
+    <string name="success_upload">Video uploaded successfully!</string>
+    <string name="success_regenerate">Clip regenerated successfully!</string>
+    <string name="success_download">Video saved to Downloads</string>
+    <string name="success_copied">Copied to clipboard</string>
+</resources>

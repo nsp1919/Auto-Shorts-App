@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Color definitions for use in XML layouts -->
+    <color name="primary">#6366F1</color>
+    <color name="primary_dark">#4F46E5</color>
+    <color name="primary_light">#818CF8</color>
+    
+    <color name="secondary">#8B5CF6</color>
+    <color name="secondary_dark">#7C3AED</color>
+    
+    <color name="accent">#EC4899</color>
+    <color name="accent_dark">#DB2777</color>
+    
+    <color name="background">#0F0F0F</color>
+    <color name="background_secondary">#121212</color>
+    
+    <color name="surface">#1A1A1A</color>
+    <color name="surface_elevated">#242424</color>
+    
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#B3B3B3</color>
+    <color name="text_tertiary">#737373</color>
+    
+    <color name="success">#10B981</color>
+    <color name="warning">#F59E0B</color>
+    <color name="error">#EF4444</color>
+    
+    <color name="border">#2E2E2E</color>
+    
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+</resources>

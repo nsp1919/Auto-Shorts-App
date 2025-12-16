@@ -1,0 +1,30 @@
+# Built files
+*.iml
+.gradle/
+build/
+local.properties
+
+# IDE
+.idea/
+*.iws
+*.ipr
+
+# Android
+*.apk
+*.ap_
+*.dex
+.externalNativeBuild/
+.cxx/
+
+# Kotlin
+*.kotlin_module
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Test
+/coverage/
