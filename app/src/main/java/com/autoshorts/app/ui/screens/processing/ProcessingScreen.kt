@@ -13,6 +13,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Brush
+import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
@@ -243,7 +244,7 @@ private fun AnimatedLoader() {
     ) {
         // Outer rotating ring
         CircularProgressIndicator(
-            progress = { 0.7f },
+            progress = 0.7f,
             modifier = Modifier
                 .size(160.dp)
                 .graphicsLayer { rotationZ = rotation },
@@ -324,6 +325,3 @@ private fun StepItem(
         }
     }
 }
-
-private fun Modifier.graphicsLayer(block: androidx.compose.ui.graphics.GraphicsLayerScope.() -> Unit) =
-    this.then(Modifier.graphicsLayer(block))

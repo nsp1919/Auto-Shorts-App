@@ -83,7 +83,7 @@ fun ProcessingLoader(
 
         // Progress bar
         LinearProgressIndicator(
-            progress = { progress / 100f },
+            progress = progress / 100f,
             modifier = Modifier
                 .fillMaxWidth()
                 .height(8.dp)
