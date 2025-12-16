@@ -23,6 +23,7 @@ import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import androidx.compose.ui.window.Dialog
 import com.autoshorts.app.ui.theme.*
 import com.autoshorts.app.util.Constants
@@ -248,6 +249,3 @@ fun FontSizeSlider(
         }
     }
 }
-
-private val Int.sp: androidx.compose.ui.unit.TextUnit
-    get() = androidx.compose.ui.unit.sp
