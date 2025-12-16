@@ -8,7 +8,7 @@ object Constants {
     // Backend API base URL
     // For Android emulator, use 10.0.2.2 to access localhost
     // For physical device, use your computer's local IP or production URL
-    const val BASE_URL = "http://10.0.2.2:8000/"
+    const val BASE_URL = "https://auto-shorts-app.onrender.com/"
     
     // API endpoints
     const val ENDPOINT_UPLOAD = "api/upload"
