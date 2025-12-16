@@ -18,6 +18,9 @@ import com.autoshorts.app.ui.theme.AutoShortsTheme
  */
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
+        // Install splash screen before super.onCreate
+        installSplashScreen()
+        
         super.onCreate(savedInstanceState)
         
         // Enable edge-to-edge display for immersive UI
